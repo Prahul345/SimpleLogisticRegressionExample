@@ -1,5 +1,5 @@
 import pandas as pd
-#col_names = ['pregnant', 'glucose', 'bp', 'skin', 'insulin', 'bmi', 'pedigree', 'age', 'label']
+
 # load dataset
 time_data = pd.read_csv("D:/time.csv",header=None,names=['Hours','Pass'])
 #print(time_data)
@@ -10,10 +10,6 @@ y_data = time_data.iloc[:,1].values
 print(x_data)
 print(y_data)
 
-#X = time_data[:,:-1].values # Features
-#y = time_data[:,1].values # Target variable
-#print("X::",X)
-#print("Y::",y)
 
 
 from sklearn.model_selection import train_test_split
